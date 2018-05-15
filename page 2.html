@@ -12,9 +12,9 @@
 			</div>
 			<div class="nav-bar">
 				<ul class="nav">
-				     <li><a href="index.html">About Me</a></li>
-					 <li><a href="page 2.html">Hobbies And Interests</a></li>  
+				     <li><a href="index.html">About Me</a></li> 
 					 <li><a href="page 3.html">Frequently Visted Sites</a></li>
+					 <li><a href="quiz.html"> Take the Quiz </a></li>
 				</ul>
 			</div>
 			<div class="content">
@@ -23,14 +23,31 @@
 
 <p> A major love of mine has always been gaming. Since a small boy i've always loved every single aspect of gaming which has progressed even more so as the years went on. I own most consoles old and new, but my major love has got to be PC Gaming.
 I've had great joy of converting one of rooms in my house upstairs as a gaming shrine, which holds all sorts of gaming memoriblia aswell as my PC Gaming set up for which i've spent a good amount of money on, and every single penny has been worth it. 
+I have recently invested in an Oculus Rift Virtual Reality Headset with touch controllers, and In all my years of gaming I have never experienced anything so incredible in my life.
 <p>I go online with the Gamertag <b>WeirdbeardUK</b> and have various different online social media profiles to share my gameclips, screenshots and any other gaming related posts.
 </p>
 <li><a href="https://www.instagram.com/weirdbearduk"> Instagram </a></li>
 <li><a href="https://www.twitter.com/weirdbearduk"> Twitter </a> </li>
 <li><a href=https://www.youtube.com/weirdbearduk"> YouTube </a></li>
 
-
 <p>The following specifications make up my weapon of choice</p>
+
+<button onclick="myFunction()"> Show The Specs</button>
+
+<script>
+
+
+function myFunction() {
+    var x = document.getElementById("mySpecs");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+<div id="mySpecs">
 <ul>
 <li> Intel i7 6800K Overclocked 4.50GHZ</li>
 <li> Cooler Master CPU Cooler</li>
@@ -45,10 +62,12 @@ I've had great joy of converting one of rooms in my house upstairs as a gaming s
 <li> Corsair Strafe RBG Keyboard</li>
 <li> Corsair Harpoon RGB Mouse</li>
 <li> Corsair Void 7.1 Wireless Headset</li>
-</ul>
-<div class="setup">
+<li> Oculus Rift VR With Oculus Touch </li>
 <img src="assets/images/Setup.png" alt="Setup" width="400" height "377">
+</ul>
 </div>
+
+
 <div class="footer">
 				&copy; Copyright 2018
 			</div>

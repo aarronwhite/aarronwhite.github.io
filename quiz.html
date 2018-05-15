@@ -114,6 +114,7 @@ margin-top: 20px;
 <label for="bomb"><input type="radio" name="longe" value="0" id="bomb"/> Bomberman </label>
 <label for="quest"><input type="radio" name="longe" value="0" id="quest"/> Dragon Quest </label>
 
+
 <button type="submit" value="Submit">Submit</button>
 </fieldset>
 </form>
@@ -135,8 +136,22 @@ document.getElementById("form1").onsubmit=function() {
 	   longe = parseInt(document.querySelector('input[name = "longe"]:checked').value);
 	   
 	   
+	   
 	   result = mfc + series + speak + travel + create + first + vr + mgs + coven + longe ;
 	   document.getElementById("score").innerHTML = result;
+	   
+	if (result === 10) {result2 = " | Call yourself a gamer?.<br/><img src='assets/images/captain.gif' width='300'/>"};
+    if (result === 20) {result2 = " | I think you need to spend more time brushing up your gaming knowledge. Try again.<br /><img src='assets/images/captain.gif' width='300'/>"};
+	if (result === 30) {result2 = " | Hmm you could do better. Try again.<br /><img src='assets/images/whatis.gif' width='300'/>"};
+    if (result === 40) {result2 = " | Git Gud.<br/><img src='assets/images/gitgud.gif' width='300'/>                                                                                             "};
+	if (result === 50) {result2 = " | Half way, Good attempt! <br/><img src='assets/images/gitgud.gif' width='300'/>                                                                                       "};
+	if (result === 60) {result2 = " | Close but no cigar. <br/><img src='assets/images/cheer.gif' width='300'/>                                                                                             "};
+	if (result === 70) {result2 = " | Final Push! GO GO GO! <br/><img src='assets/images/gogogo.gif' width='300'/>                                                                                               "};
+	if (result === 80) {result2 = " | You cant give up just yet, Again? <br/><img src='assets/images/giveup.gif' width='300'/>                                                                                               "};
+	if (result === 90) {result2 = " | So close. Try again.<br /><img src='assets/images/soclose.gif' width='300' />"};
+    if (result === 100) {result2 = "| You're a pro gamer.<br /><img src='assets/images/drakedance.gif' width='300' />"};
+	document.getElementById("score").innerHTML = result + result2;
+
 	   
 	   
 
